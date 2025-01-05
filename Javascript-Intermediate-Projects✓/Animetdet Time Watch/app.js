@@ -1,9 +1,6 @@
 
+const launchDate = new Date("2024-10-20T00:00:00.000Z"); 
 
-// Set the launch date and time
-const launchDate = new Date("2024-10-20T00:00:00.000Z"); // Replace with your desired launch date and time
-
-// Function to update the timer display
 function updateTimer() {
   const currentDate = new Date();
   const diff = launchDate.getTime() - currentDate.getTime();
@@ -25,8 +22,6 @@ function updateTimer() {
    seconds.toString().padStart(2, "0");
 }
 
-// Update the timer display initially
 updateTimer();
 
-// Set an interval to update the timer every second
 setInterval(updateTimer, 1000);
