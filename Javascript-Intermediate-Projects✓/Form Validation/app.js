@@ -1,3 +1,4 @@
+
 const submitBtn = document.getElementById('submitBtn');
 const nameError = document.getElementById('nameError');
 const emailError = document.getElementById('emailError');
