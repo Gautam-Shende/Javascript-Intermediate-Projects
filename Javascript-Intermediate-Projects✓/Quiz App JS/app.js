@@ -56,15 +56,12 @@ function checkAnswer(e) {
     const selectedOption = e.target.textContent;
     const currentQuiz = quizData[currentQuestion];
     if (selectedOption === currentQuiz.answer) {
-        // Correct answer
         correctAnswers++;
     }
-    // Move to next question
     currentQuestion++;
     if (currentQuestion < quizData.length) {
         displayQuestion();
     } else {
-        // Quiz finished
         endQuiz();
     }
 }
@@ -82,7 +79,6 @@ nextButton.addEventListener('click', () => {
     if (currentQuestion < quizData.length) {
         displayQuestion();
     } else {
-        // Quiz finished
         endQuiz();
     }
 });
